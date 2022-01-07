@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <title>Books I Read...</title>
+  </head>
+  <body>
+    <header id="header">
+      <div>
+        <h1>BOOKS I READ...</h1>
+      </div>
+    </header>
+    <main>
+      <button class="button_add" id="addBook">ADD A NEW BOOK</button>
+      <table id="tableBook" class="records">
+        <thead>
+          <tr>
+            <th class="head" >Book</th>
+            <th class="head">Author</th>
+            <th class="head" id="stars">&#9733;&#9733;&#9733;</th>
+            <th class="head">Action</th>
+          </tr>
+        </thead>
+        <tbody class="tbody" id="tbody">
+          
+        </tbody>
+      </table>
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <header class="modal-header">
+            <h2 id="h2">New Book</h2>
+            <span id="modalClose" class="modal-close">&#10006;</span>
+          </header>
+          <form id="form" class="modal-form">
+            <input type="text" id="Book" class="modal-field" data-index="new" placeholder="Book's Name" required/>
+            <input type="text" id="Author" class="modal-field" placeholder="Book's Author" required/>
+            <input type="number" id="Evaluation" class="modal-field" placeholder="Book's Evaluation : 0-100" required/>
+            <div id="date">
+              <label for="Date">BOOK's READING DATE : </label>
+              <br />
+              <input type="date" id="Date" class="modal-field" required>
+            </div>
+          </form>
+          <footer class="modal-footer">
+            <button id="save" class="button_green">SAVE</button>
+            <button id="cancel" class="button_red">CANCEL</button>
+          </footer>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Developed by : Gabriel Dantas</p>
+    </footer>
+    <script type="text/javascript" charset="utf-8" src="interactions.js"></script>
+  </body>
+</html>
